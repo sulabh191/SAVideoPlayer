@@ -1,0 +1,22 @@
+{
+    "videos": [
+               {
+               "video_id":"10c47a1c-2aab-41cd-af43-da37bcd374ad",
+               "title" : "sample video 1",
+               "thumnail_url" : "http://www.xyz.com/images/sampleimage.png",
+               "video_url"  : "http://www.streambox.fr/playlists/x36xhzz/x36xhzz.m3u8",
+               "tv_rating" : "TV-14",
+               "description":"video description",
+               "video_length" : "00:25:30"
+               },
+               {
+               "video_id":"10c47a1c-2aab-41cd-af43-da37bcd374ad",
+               "title" : "sample video 2",
+               "thumnail_url" : "http://www.xyz.com/images/sampleimage.png",
+               "video_url"  : "http://www.streambox.fr/playlists/x36xhzz/x36xhzz.m3u8",
+               "tv_rating" : "",
+               "description":"video description",
+               "video_length" : "25:30"
+               }
+  ]
+}

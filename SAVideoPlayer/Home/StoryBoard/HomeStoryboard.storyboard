@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="2S4-hU-HeQ">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="8zZ-ID-V3y" customClass="HomeViewController" customModule="VideoAnalytics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4zf-Jj-rjY"/>
+                        <viewControllerLayoutGuide type="bottom" id="BE8-FA-bha"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uck-mv-RC4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBG-Qk-xMi">
+                                <rect key="frame" x="162.5" y="60" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ggv-sZ-yR2">
+                                <rect key="frame" x="0.0" y="155" width="375" height="459"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8zZ-ID-V3y" id="5mb-bt-R80"/>
+                                    <outlet property="delegate" destination="8zZ-ID-V3y" id="s3k-1p-Ofn"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bBG-Qk-xMi" firstAttribute="centerX" secondItem="Uck-mv-RC4" secondAttribute="centerX" id="6q7-V0-JpX"/>
+                            <constraint firstAttribute="trailing" secondItem="ggv-sZ-yR2" secondAttribute="trailing" id="87t-eU-M4Y"/>
+                            <constraint firstItem="bBG-Qk-xMi" firstAttribute="top" secondItem="4zf-Jj-rjY" secondAttribute="bottom" constant="40" id="DGz-hT-u6Y"/>
+                            <constraint firstItem="ggv-sZ-yR2" firstAttribute="top" secondItem="bBG-Qk-xMi" secondAttribute="bottom" constant="74" id="Mmv-UU-tx2"/>
+                            <constraint firstItem="ggv-sZ-yR2" firstAttribute="leading" secondItem="Uck-mv-RC4" secondAttribute="leading" id="byX-U2-cte"/>
+                            <constraint firstItem="BE8-FA-bha" firstAttribute="top" secondItem="ggv-sZ-yR2" secondAttribute="bottom" constant="53" id="pxd-QU-Amr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="ggv-sZ-yR2" id="vqV-PT-hCt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="USC-Tx-ZKZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.8000000000000007" y="-287.40629685157421"/>
+        </scene>
+    </scenes>
+</document>
